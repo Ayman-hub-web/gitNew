@@ -1,0 +1,29 @@
+Hier einige Informationen über git und wie man damit arbeitet:
+- Zuerst wenn man ein Projekt erstellt in einem Verzeichnis und man geht in dieses Verzeichnis 
+- Man braucht git bash konlsole und in dem Projektverzeichnis geht man so vor:
+- Zuerst initialisiert man .git Verzeichnis mit: git init 
+- Hier wird ein .get Verzeichnis erstellt was eigentlich leer ist. 
+- Man prüft den status in dem Verzeichnis mit : git status 
+- So erstellt man irgendeine Datei und gibt git status, dann erscheint den Namen dieser neuen Datei in rot
+- Man kann dieser Datei zu .git addieren mit: git add DateiName 
+- Manchmal verlangt dasss man sein userName und userEmail gibt, aber das am Anfang des Projektes.
+- Der Vorgang ist aber nicht abgeschlossen, denn man muss die Datei wirklich in .get reinkopieren mit:
+- git commit -m "Kommentar"
+- Hat man mehr als eine neue Datei, so kann man diese Dateien alle auf Einmal zu .git addieren mit git add * 
+- Über den Befehl git log kann history verfolgen mit allen nötigen Informationen. 
+- Bis zu dieser Stelle war das Speichern von Dateien lokal auf dem Rechner. So man kann auch das ganze global speichern 
+- Das Zauberwort heisst GitHub. 
+- Zuerst melde ich mich bei GitHub und wenn ich kein account habe, so registriere ich mich bei GitHub
+- Dann erstelle ich ein Repository mit einem ausgesuchten Namen. 
+- Ist der RepositoryName erstellt, so erscheint eine Seite mit einer Url. Diese kopiert man dann 
+- So jetzt wird eine Verknüpfung erstellt wie folgt:
+- git remote add origin https://github.com/Ayman-hub-web/gitTest.git 
+- Folgende Schritte müssen standard gemacht werden:
+…or create a new repository on the command line
+echo "# gitTest" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ayman-hub-web/gitTest.git
+git push -u origin main
